@@ -5,14 +5,37 @@
 ```js
 let i = 0;
 while (i < 3) {
-  println('hi');
+  println("hi");
   i++;
 }
 ```
 
 3. Write a function named `getEvenSum` that accepts a parameter `max`. Return the sum of all even numbers. The value of max should default to 10.
 
+```js
+function getEvenSum(max = 10) {
+  let sum = 0;
+  for (let i = 0; i <= max; i++) {
+    if (i % 2 === 0) {
+      sum += i;
+    }
+  }
+  return sum;
+}
+```
+
 4. Write a function named `getOddSum` that accepts a parameter `max`. Return the sum of all odd numbers. The value of max should default to 10.
+
+````js
+function getEvenSum(max = 10) {
+  let sum = 0;
+  for (let i = 0; i <= max; i++) {
+    if (i % 2 !== 0) {
+      sum += i;
+    }
+  }
+  return sum;
+}
 
 5. Write a function named `getProductOfDigits` that accepts a parameter `num`. It returns the product of all the digits in the number.
 
@@ -24,11 +47,11 @@ while (i < 3) {
 ```js
 function check(num) {
   if (num > 5) {
-    return 'Bigger than 5';
+    return "Bigger than 5";
   }
 
   if (num < 5) {
-    return 'Smaller than 5';
+    return "Smaller than 5";
   }
 
   return num;
@@ -37,19 +60,19 @@ function check(num) {
 check(10); // output
 check(1); // output
 check(5); // output
-```
+````
 
 7. What will be the output of the following code given below? Explain the reason?
 
 ```js
 function getOutput(name) {
-  if (name === 'Arya') return 'You are arya';
-  if (name === 'John') return 'You are john';
-  return 'Who are you';
+  if (name === "Arya") return "You are arya";
+  if (name === "John") return "You are john";
+  return "Who are you";
 }
 
-getOutput('Arya'); // what will be the output
-getOutput('John'); // what will be the output
+getOutput("Arya"); // what will be the output
+getOutput("John"); // what will be the output
 getOutput(); // what will be the output
 ```
 
@@ -57,13 +80,13 @@ getOutput(); // what will be the output
 
 ```js
 function getOutput(name) {
-  if (name === 'Arya') console.log('You are arya');
-  if (name === 'John') console.log('You are john');
-  return 'Who are you';
+  if (name === "Arya") console.log("You are arya");
+  if (name === "John") console.log("You are john");
+  return "Who are you";
 }
 
-getOutput('Arya'); // what will be the output
-getOutput('John'); // what will be the output
+getOutput("Arya"); // what will be the output
+getOutput("John"); // what will be the output
 getOutput(); // what will be the output
 ```
 
