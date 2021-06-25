@@ -5,11 +5,13 @@
 function sum(a, b) {
   return a + b;
 }
+// Will return sum of a and b
 
 // second
 function sum(a, b) {
   console.log(a + b);
 }
+// Will log the sum of a and b, will return undefined
 ```
 
 2. If we store the returned value of both functions above in variable `first` and `second` what will be the value of `first` and `second`.
@@ -23,10 +25,10 @@ function sum(a, b) {
 6. What will be the output of the function below and why?
 
 ```js
-let userName = 'John';
+let userName = "John";
 
 function showMessage() {
-  let message = 'Hello, ' + userName;
+  let message = "Hello, " + userName;
   return message;
 }
 
@@ -36,10 +38,10 @@ showMessage();
 7. What will be the output for `Output1` `Output2` and `Output3` in the code below.
 
 ```js
-let userName = 'John';
+let userName = "John";
 
 function showMessage() {
-  let message = 'Hello, ' + userName;
+  let message = "Hello, " + userName;
   return message;
 }
 
